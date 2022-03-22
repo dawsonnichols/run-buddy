@@ -77,11 +77,12 @@
   
   
   .hero {
-    background-image: url('../images/hero-bg.jpeg');
+    background-image: url('../images/flipped-hero-image.jpeg');
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
+    
     
   }
   .hero-secondary {
@@ -93,16 +94,27 @@
   .hero-form {
     border: 3px solid #024e76;
     background-color: #fce138;
-    padding: 20px;
-    width: 500px;
+    padding: 10px;
     color: #024e76;
     position: absolute;
     bottom: 20px;
+    top: 20px; 
     right: 140px;
+    height: 85%;
+    width: 40%;
+    margin: auto;
     
   }
   .hero-form p {
       margin: 5px 0 15px 0; 
+      
+  }
+  .hero-cta h2 {
+    color: #fce138; 
+    
+  }
+  .hero-cta p {
+    color: white; 
   }
   .form-input {
     border: 1px solid #024e76;
