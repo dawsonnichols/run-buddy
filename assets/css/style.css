@@ -4,6 +4,100 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info>* {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
+}
+
 body {
 
   color: #39a6b2;
@@ -54,7 +148,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -93,6 +187,7 @@ section {
   background-size: cover;
   background-position: center;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -116,10 +211,22 @@ section {
 
 }
 
-.hero-form p {
+.hero-form {
   margin: 5px 0 15px 0;
   width: 40%;
   margin: 3.5%;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.hero-formbottom {
+  display: inline-flexbox;
+  /* flex-direction: row; */
+  /* flex-wrap: flex; */
+  /* justify-content: space-evenly; */
+
 }
 
 .hera-cta {
@@ -128,7 +235,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -163,9 +270,11 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+
 .intro {
   background-color: #024e76;
 }
+
 .intro h2 {
   font-size: 55px;
   color: #fce138;
@@ -182,17 +291,16 @@ section {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
 }
 
 
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   border-bottom: 3px solid;
   text-align: center;
   padding-bottom: 20px;
-  text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
 }
@@ -205,6 +313,7 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+
 .step-text {
   flex: 12;
 }
@@ -212,6 +321,7 @@ section {
 .steps {
   background-color: #fce138;
 }
+
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
@@ -237,24 +347,29 @@ section {
   text-align: center;
   margin: 20px;
 }
+
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
 }
+
 .step-info {
-  flex: 2 70%; 
+  flex: 2 70%;
   display: flex;
   flex: wrap;
   align-items: center;
 }
+
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
 }
+
 .step-img img {
-  max-width: 100%; 
+  max-width: 100%;
 }
+
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -262,6 +377,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .trainer {
   margin: 20px;
   background: #024e76;
@@ -276,7 +392,7 @@ section {
 
 .trainer-bio {
   padding: 25px;
-  
+
 }
 
 .text-left {
@@ -303,6 +419,7 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
+
 .contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
@@ -313,6 +430,7 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
 }
+
 .contact-form button {
   width: 100%;
   border: none;
@@ -322,29 +440,33 @@ section {
   padding: 15px 0;
   font-size: 16px;
 }
+
 .contact {
   background-color: #024e76;
   height: 600px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .contact h2 {
   color: #fce138;
 }
-.contact-info > * {
+
+.contact-info>* {
   flex: 1;
   margin: 15px;
 }
+
 .contact-info {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .contact-info iframe {
-  
+
   height: 100%;
   vertical-align: top;
-  position: relative; 
+  position: relative;
   float: left;
 }
 
@@ -374,4 +496,12 @@ section {
 
 .flex-row {
   display: flex;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
